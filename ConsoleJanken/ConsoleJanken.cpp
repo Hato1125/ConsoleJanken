@@ -36,12 +36,16 @@ int main(void)
 	myHand = 0;
 	enemyHand = 0;
 
-	printf("手を選んでください\n\n");
+	printf(BACKCOLOR_GREEN);
+	printf(TEXTCOLOR_BLACK);
+	printf("手を選んでください   \n");
 	printf("---------------------\n");
 	printf("|  A  |   S   |  D  |\n");
 	printf("|-----|-------|-----|\n");
 	printf("| Guu | Tyoki | Paa |\n");
 	printf("---------------------\n");
+	printf(TEXTCOLOR_RESET);
+	printf(BACKCOLOR_RESET);
 
 	char input[2];
 	scanf_s("%s", input, 2);
@@ -92,12 +96,16 @@ int main(void)
 		break;
 	}
 
-	printf("じゃんけんを続けますか？\n\n");
-	printf("---------------------\n");
-	printf("|  A  |  S  |\n");
-	printf("|-----|-----|\n");
-	printf("| Yes |  No |\n");
-	printf("---------------------\n");
+	printf(BACKCOLOR_GREEN);
+	printf(TEXTCOLOR_BLACK);
+	printf("じゃんけんを続けますか？ \n");
+	printf("-------------            \n");
+	printf("|  A  |  S  |            \n");
+	printf("|-----|-----|            \n");
+	printf("| Yes |  No |            \n");
+	printf("-------------            \n");
+	printf(TEXTCOLOR_RESET);
+	printf(BACKCOLOR_RESET);
 
 	char input2[2];
 	scanf_s("%s", input2, 2);
