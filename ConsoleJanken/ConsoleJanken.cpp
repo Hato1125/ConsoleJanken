@@ -109,6 +109,7 @@ int main(void)
 
 	char input2[2];
 	scanf_s("%s", input2, 2);
+	printf("\n\n\n");
 
 	switch (input2[0])
 	{
